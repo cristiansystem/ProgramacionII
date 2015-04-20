@@ -1,0 +1,46 @@
+ENTRADAS
+peso
+dolar
+totalconvertido
+
+PROCEDIMIENTO
+- solicitar cantidad en pesos
+
+SALIDAS
+- totalconvertido = pesos * dolar;
+
+
+import java.util.Scanner;
+import java.text.DecimalFormat; 
+ 
+public class Program {
+
+  public static void main(String[] args) {
+
+float peso;
+float dolar;
+double totalconvertido;
+Scanner dinero = new Scanner(System.in);
+DecimalFormat reducir = new DecimalFormat("0.0"); 
+
+System.out.println("En cuanto cerro el dolar en la tasa de cambio e ingrese el valor actual: ");
+dolar = dinero.nextFloat();
+
+System.out.println("Ingrese la cantidad de pesos que desea convertir");
+peso = dinero.nextFloat();
+
+totalconvertido = peso * dolar;
+
+System.out.println("El valor total convertido es $"+totalconvertido);
+
+
+}
+}
+
+class ALA{ 
+// @author Elber_Galarga un amigo mas 
+public static void main(String[] args){ 
+
+double x=25.324178787878787878645454; 
+DecimalFormat df = new DecimalFormat("0.00"); 
+System.out.println(df.format(x)); 
