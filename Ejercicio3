@@ -1,0 +1,46 @@
+import java.util.Scanner;
+ 
+public class Program {
+
+  public static void main(String[] args) {
+     String nombre;
+     float peso;
+     float altura;
+     float imc;
+     Scanner user = new Scanner(System.in);
+     
+     
+     System.out.println("Ingrese su nombre: ");
+     nombre = user.nextLine();
+     System.out.println("Ingrese su peso en kg: ");
+     peso = user.nextFloat();
+     System.out.println("Ingrese su altura en cm: ");
+     altura = user.nextFloat();
+      
+      imc = peso/(altura*altura);
+      
+      if (imc < 0.0016) {
+          System.out.println(nombre+" su IMC es de: "+imc+" y se define como Infrapeso: Delgadez Severa");
+      } else if (imc <= 0.0016 || imc <= 0.001699) {
+          System.out.println(nombre+" su IMC es de: "+imc+" y se define como Infrapeso: Delgadez moderada");
+      } else if (imc <= 0.0017 || imc <= 0.001849) {
+          System.out.println(nombre+" su IMC es de: "+imc+" y se define como Infrapeso: Delgadez aceptable");
+      } else if (imc <= 0.001850 || imc <= 0.002499) {
+          System.out.println(nombre+" su IMC es de: "+imc+" y se define como Peso Normal");
+      } else if (imc <= 0.002500 || imc <= 0.002999) {
+          System.out.println(nombre+" su IMC es de: "+imc+" y se define como Sobrepeso");
+      } else if (imc <= 0.003000 || imc <= 0.003499) {
+          System.out.println(nombre+" su IMC es de: "+imc+" y se define como Obeso: Tipo I");
+      } else if (imc <= 0.003500 || imc <= 0.004000) {
+          System.out.println(nombre+" su IMC es de: "+imc+" y se define como Obeso: Tipo II");
+      } else if (imc >= 0.004000) {
+          System.out.println(nombre+" su IMC es de: "+imc+" y se define como Obeso: Tipo III");
+      } else {
+          System.out.println(nombre+" su IMC es de: "+imc+" y se define como no existe clasificacion");
+      };
+
+    
+
+     
+    }
+}
