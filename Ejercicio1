@@ -1,0 +1,33 @@
+import java.util.Scanner;
+ 
+public class Program {
+    
+	public static void main(String[] args) {
+     double nota1,nota2,nota3, r1,r2,r3,total;
+     Scanner lector = new Scanner(System.in);
+     double prom0 = 0.3;
+     double prom1 = 0.4;
+     
+     System.out.println("Ingrese la primera nota: ");
+     nota1 = lector.nextDouble();
+     System.out.println("Ingrese la segunda nota: ");
+     nota2 = lector.nextDouble();
+     System.out.println("Ingrese la tercera nota: ");
+     nota3 = lector.nextDouble();
+         
+         r1 = nota1 * prom0;
+         r2 = nota2 * prom0;
+         r3 = nota3 * prom1;
+         
+         total = r1+r2+r3;
+         
+         
+     
+     if (total >= 3.0){
+         
+         System.out.println("Usted Aprobo el semestre y su nota es: "+total);
+     } else {
+         System.out.println("Usted no Aprobo el semestre y su nota es: "+total);
+     }
+    }
+}
