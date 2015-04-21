@@ -1,1 +1,13 @@
-sd
+import java.util.Scanner;
+ 
+public class Program {
+
+  public static void main(String[] args) {
+      Integer numero,valor;
+	Scanner teclado = new Scanner(System.in);
+	System.out.println("Ingrese el numero que desea calcular");
+	numero = teclado.nextInt();
+	valor = numero*3;
+	System.out.println("El triple del numero es: "+valor);
+    }
+}
