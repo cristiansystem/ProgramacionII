@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Program {
+
+  public static void main(String[] args) {
+      int vmadre,vhijo,valorherencia;
+      Scanner tecla = new Scanner(System.in);
+      System.out.println("Ingrese la herencia que desea administrar: ");
+      valorherencia = tecla.nextInt();
+      vmadre = valorherencia/2;
+      vhijo = vmadre/3;
+      System.out.println("El valor de la herencia que le corresponde a la madre es: $"+vmadre);
+      System.out.println("El valor de la herencia que le corresponde al primer hijo es: $"+vhijo+". Al segundo hijo es de: $"+vhijo+". Al tercer hijo es de: $"+vhijo);
+      
+    }
+}
