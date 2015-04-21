@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Program {
+
+  public static void main(String[] args) {
+	float velocidad,tiempoinicio,distancia,metros;
+	Scanner carro = new Scanner(System.in);
+	System.out.println("Para calcular la distancia recorrida, por favor ingrese la velocidad en km: ");
+	velocidad = carro.nextFloat();
+	System.out.println("Ahora, ingrese el tiempo transcurrido desde que inicio su viaje en minutos: ");
+	tiempoinicio = carro.nextFloat();
+	metros = velocidad*tiempoinicio;
+	distancia = metros/1000;
+	System.out.println("La distancia recorrida es: "+distancia+"Km");
+
+      
+    }
+}
