@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Program {
+
+  public static void main(String[] args) {
+     int ibc = 40;
+     double salario,total;
+     Scanner contabilidad = new Scanner(System.in);
+     System.out.println("Ingrese el salario del empleado: ");
+     salario = contabilidad.nextInt();
+     total = (salario*ibc)/100;
+     System.out.println("El IBC del salario del empledo es de: $"+total);
+    }
+}
