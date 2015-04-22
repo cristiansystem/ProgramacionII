@@ -1,1 +1,15 @@
+import java.util.Scanner;
 
+public class Program {
+
+  public static void main(String[] args) {
+     float kmuser, duser,porcentaje;
+     Scanner fisica = new Scanner(System.in);
+     System.out.println("Ingrese los  kilometros que hay desde su punto de partida hasta su punto de llegada: ");
+     kmuser = fisica.nextFloat();
+     System.out.println("Ingrese la distancia recorrida hasta el momento: ");
+     duser = fisica.nextFloat();
+     porcentaje = (duser*100)/kmuser;
+     System.out.println("Usted a recorrido el: "+porcentaje+"% de la distancia total.");
+    }
+}
