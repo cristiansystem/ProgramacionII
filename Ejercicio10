@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Program {
+
+    public static void main(String[] args) {
+        double salud = 12.5;
+        double pension = 16;
+        double ibc, totals, totalp;
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese el valor del IBC: ");
+        ibc = teclado.nextDouble();
+        totals = (ibc*salud)/100;
+        totalp = (ibc*pension)/100;
+        System.out.println("El aporte de salud a pagar es de: $"+totals+". El aporte a pension es de: $"+totalp+".");
+        System.out.println("De acuerdo al IBC ingresado que es de: $"+ibc+".");
+    }
+}
